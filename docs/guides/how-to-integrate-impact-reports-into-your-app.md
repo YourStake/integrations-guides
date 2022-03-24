@@ -20,10 +20,10 @@ Developers are then able take this guide and implement custom visual components 
 
 ##### Things you will need
 
-- [API Access Token]({%link docs/guides/how-to-request-api-access.md %})
+- [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 - A portfolio `id`
-    - [Learn how to create portfolios]({% link docs/guides/how-to-create-a-portfolio.md %})
-    - [Learn how to retrieve a portfolio]({% link docs/guides/how-to-retrieve-a-portfolio.md %})
+    - [Learn how to create portfolios]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
+    - [Learn how to retrieve a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-retrieve-a-portfolio.md %})
 
 ##### Optional
 
@@ -229,7 +229,7 @@ In the case of the data above, all of ESG metrics in the first portoflio are bet
 
 ##### Rendering an HTML  impact report
 
-[Download Sample Impact Report]({{ site.url }}/templates.zip)
+[Download Sample Impact Report]({{ site.baseurl }}/templates.zip)
 
 We have created an HTML template using the report and portfolio data
 and generated a sample report for you.
@@ -238,4 +238,4 @@ This allows you to see a working example and get a hands on understanding of how
 
 The samples are built using the [Bootstrap framework](https://getbootstrap.com) for ease of use.
 
-![Sample impact report template screenshot](/assets/images/sample-impact-report.png)
+![Sample impact report template screenshot]({{ site.baseurl }}/assets/images/sample-impact-report.png)
