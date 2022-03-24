@@ -32,7 +32,7 @@ A portfolio contains the range of investments held by an entity.
 
 [API Docs](https://www.yourstake.org/api/docs/#tag/Values)
 
-Reports use what we call **Screen Sets**. They are collections of Impact Factor metrics with a threshold for each metric. They are created automatically after a user takes the [Questionnaire](/), and can be directly associated with a Prospect or Portfolio.
+Reports use what we call **Screen Sets**. They are collections of Impact Factor metrics with a threshold for each metric. They are created automatically after a user takes the [Questionnaire]({{ site.baseurl }}{% link docs/guides/how-to-integrate-questionnaires-to-define-a-clients-esg-profile.md %}), and can be directly associated with a Prospect or Portfolio.
 
 Screen Set ids can be passed as parameters to other endpoints to tailor the information that's returned.
 

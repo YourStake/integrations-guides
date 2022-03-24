@@ -14,7 +14,7 @@ We have built these easy to follow guides to assist you with integrating with Yo
 
 ### Proposals
 
-- [How to generate a personalized proposal](/)
+- [How to generate a personalized proposal]({{ site.baseurl }}{% link docs/guides/how-to-generate-a-personalized-proposal.md%})
 
 
 ### Portfolios

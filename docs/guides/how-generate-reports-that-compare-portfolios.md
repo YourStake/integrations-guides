@@ -24,8 +24,8 @@ Developer are then able take this guide and implement custom visual components w
 - Two (2) portfolio `id`. Make sure the portfolios have different holdings.
     - The first portfolio `id` you pass will be for the portfolio being compared against the benchmark.
     - The second portfolio `id` you pass will be used as the benchmark the other portfolio will be compared against.
-    - [Learn how to create portfolios]({% link docs/guides/how-to-create-a-portfolio.md %})
-    - [Learn how to retrieve a portfolio]({% link docs/guides/how-to-retrieve-a-portfolio.md %})
+    - [Learn how to create portfolios]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
+    - [Learn how to retrieve a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-retrieve-a-portfolio.md %})
 
 
 ##### Get the report data
@@ -214,7 +214,7 @@ In the case of the data above, all of ESG metrics in the first portoflio are bet
 
 ##### Rendering an HTML comparison report
 
-[Download Sample Comparison Report]({{ site.url }}/templates.zip)
+[Download Sample Comparison Report]({{ site.baseurl }}/templates.zip)
 
 We have created an HTML template using the report and portfolio data
 and generated a sample report for you.
@@ -223,4 +223,4 @@ This allows you to see a working example and get a hands on understanding of how
 
 The samples are built using the [Bootstrap framework](https://getbootstrap.com) for ease of use.
 
-![Sample impact report template screenshot](/assets/images/sample-comparison-report.png)
+![Sample impact report template screenshot]({{ site.baseurl }}/assets/images/sample-comparison-report.png)
