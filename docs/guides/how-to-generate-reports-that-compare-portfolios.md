@@ -208,6 +208,8 @@ To translate the overall_benchmark_comparison return value to the % difference b
 
 In the case of the data above, all of ESG metrics in the first portoflio are better than the second portfolio (the benchmark).
 
+<img src="{{ site.baseurl }}/assets/images/sample-comparison.png" width="75%" height="75%">
+
 ##### Rendering an HTML comparison report
 
 [Download Sample Comparison Report]({{ site.baseurl }}/templates.zip)
