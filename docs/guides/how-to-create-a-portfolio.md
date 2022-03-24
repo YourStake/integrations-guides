@@ -14,7 +14,7 @@ portfolio's contain a client's holding in our system. They are the building bloc
 Things you need:
 
 - [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
-- A list of the portfolio holdings with their respective `isin` identifiers
+- A list of the portfolio holdings with their respective tickers or ISINs
 
 ### Let's create a portfolio using curl.
 
@@ -26,13 +26,13 @@ First, define the request payload.
   "name": "My first test portfolio",
   "holdings": [
     {
-      "identifier_type": "isin",
-      "identifier": "US0378331005",
+      "identifier_type": "ticker",
+      "identifier": "AAPL",
       "percentage": 0.5
     },
     {
-      "identifier_type": "isin",
-      "identifier": "US78462F1030",
+      "identifier_type": "ticker",
+      "identifier": "SPY",
       "percentage": 0.5
     }
   ]
