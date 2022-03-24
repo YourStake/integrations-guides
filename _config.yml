@@ -17,7 +17,7 @@ title: YourStake
 logo: assets/images/stakelogo.png
 description: YourStake Integration Guides
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://yourstake.github.io/integrations-guides" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://yourstake.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
