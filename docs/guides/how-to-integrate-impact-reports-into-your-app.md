@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to integrate impact reports to showcase a portfolio's values alignment
+title: How to integrate impact reports into your app
 parent: Guides
 nav_order: 7
 ---
