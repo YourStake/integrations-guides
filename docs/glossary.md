@@ -23,7 +23,7 @@ API access is oriented around a specific user account. YourStake account holders
 If tokens have been provisioned for your account you can find them [here](https://www.yourstake.org/api/auth/).
 
 
-## portfolio
+## Portfolio
 
 A portfolio contains the range of investments held by an entity.
 
