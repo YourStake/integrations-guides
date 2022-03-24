@@ -22,7 +22,7 @@ We have built these easy to follow guides to assist you with integrating with Yo
 
 - [Learn how to generate reports that compare portfolios]({{ site.baseurl }}{% link docs/guides/how-to-generate-reports-that-compare-portfolios.md %})
 
-- [Learn how to integrate impact reports to showcase a portfolio's social impact]({{ site.baseurl }}{% link docs/guides/how-to-integrate-impact-reports-to-showcase-a-portfolios-social-impact.md %})
+- [Learn how to integrate impact reports to showcase a portfolio's social impact]({{ site.baseurl }}{% link docs/guides/how-to-integrate-impact-reports-into-your-app.md %})
 
 ### Portfolios
 
