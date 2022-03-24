@@ -6,31 +6,31 @@ parent: Guides
 
 # How to generate reports that compare portfolios
 
-Clients want to know the ESG impact of different portfolios.
+Clients want to know the values alignment of different portfolios.
 They want to compare to make data driven decisions.
 
-In this guide, I will show you how to:
+In this guide, we will show you how to:
 
-- Generate a report that compares two portfolios. This will allow you to build similar reports into your application and Wow! your clients.
+- Generate a report that compares two portfolios. This will allow you to build similar reports into your application and wow your clients.
 - Use the report API data to construct a sample portfolio comparison report HTML page
 
 The information here will show how the API data is turned into visual components. 
 
-Developer are then able take this guide and implement custom visual components with the API data.
+Developers are then able take this guide and implement custom visual components with the API data.
 
 ##### Things you will need
 
 - [API Access Token]({{ site.baseurl }}{%link docs/guides/how-to-request-api-access.md %})
-- Two (2) portfolio `id`. Make sure the portfolios have different holdings.
-    - The first portfolio `id` you pass will be for the portfolio being compared against the benchmark.
-    - The second portfolio `id` you pass will be used as the benchmark the other portfolio will be compared against.
+- Two (2) portfolio `id`s.
+    - The first portfolio `id` you pass will be the primary portfolio.
+    - The second portfolio `id` you pass will replace YourStake's default "blended benchmark", and act as the object for comparison.
     - [Learn how to create portfolios]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
     - [Learn how to retrieve a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-retrieve-a-portfolio.md %})
 
 
 ##### Get the report data
 
-`curl -H "Authorization: Token 816ac4f8df0e0a4539f3dc4f9313275673ad0ead" https://www.yourstake.org/api/v1/portfolios/modelportfolio_A3rNbYtpEw2H52eXBpAEeL:modelportfolio_CLWecXizzZJzC3KpzX7JX7/report/impact/`
+`curl -H "Authorization: Token YourTokenHere" https://www.yourstake.org/api/v1/portfolios/modelportfolio_A3rNbYtpEw2H52eXBpAEeL:modelportfolio_CLWecXizzZJzC3KpzX7JX7/report/impact/`
 
 To run the curl command open a terminal and paste the command above.
 
@@ -149,38 +149,38 @@ Metrics have multiple fields. Below is a brief explanation of the fields.
 "description": "Companies involved in the production of tobacco."
 ```
 
-The **name** field relates to the name of the metric.
+The **name** field is the name of the metric.
 
-The **value** field is the calculation we do based on the portfolio holdings.
+The **value** field is the main metric to be displayed. This is the portfolio's value compared to a benchmark. Note: check the unit response for units.
 
-The **prefix** field is the symbol used in front of the **value** field to provide context.
+The **prefix** field is the symbol used in front of the **value** field to provide context. For example, the prefix might be "+" or "-" depending on whether the number is more or less than the benchmark. This can also include words or symbols that give meaningful context.
 
-The **unit** field defines metric type.
+The **unit** field defines metric type. E.g. "%". Can be a word or phrase
 
-The **mean_weighted_numbers** field is the value of a calculation we do based on the portfolio holdings.
+The **mean_weighted_numbers** field is the absolute value of the portfolio on this metric.
 
-The **mean_weighted_benchmark_numbers** field is the value of a calculaiton we do based on the portfolio holdings.
+The **mean_weighted_benchmark_numbers** field is the absolute value of the benchmark on this metric.
 
-The **esgissue_slug** field provides the metric taxonomy category.
+The **esgissue_slug** field is the slug of the ESG Issue, see the ESG Issues endpoint for details.
 
-The **better_than_benchmark** field let's you know if the metric is better than the benchmark.
+The **better_than_benchmark** field is a boolean field that lets you know if the metric is better than the benchmark.
 
-The **impact_factor_id** field relates to the Impact Factor. You can get an impact factor from the API by passing this value.
+The **impact_factor_id** field provides descriptive information about the metric. See the Impact Factors endpoint for more details
 
-The **attribution_id** field relates to the attribution. You can get an attribution from the API by passing this value.
+The **attribution_id** field is the ID to pass to the Report Attribution endpoint to see the breakdown of how each portfolio holding performs for this metric.
 
-The **suffix** field is the symbol to provide additional context.
+The **suffix** field is the symbol to provide additional context. Suffix is not required.
 
-The **source_type** field is the type of the source of the information.
+The **source_type** field is the type of the source of the information, such as Government, Academia, etc.
 
-The **less_is_more** field tells you if a lower number is a postive.
+The **less_is_more** field tells you if a lower number is described as "good" from a values-alignment perspective.
 
 The **description** field describes the metric.
 
 
-##### Understanding the comparison data
+##### Understanding the overall comparison data
 
-The report field `overall_benchmark_comparison` contains the values you need to compare the two portfolios. The values are the result of calculating the how the first portfolio compares against the second (first vs. benchmark). Each value relates to a specific ESG metric, which are: health, environment, human rights, equal opportunity, and accountability.
+The report field `overall_benchmark_comparison` contains the values you need to compare the two portfolios on an aggregated basis. The values are the result of calculating the how the first portfolio compares against the second (first vs. benchmark). Each value relates to a specific ESG metric, which are: health, environment, human rights, equal opportunity, and accountability.
 
 
 ```
@@ -195,9 +195,6 @@ The report field `overall_benchmark_comparison` contains the values you need to 
 
 The [API Docs](https://www.yourstake.org/api/docs/#operation/Generate%20a%20Report) explain how these values are explained.
 
-I have copied over the explanation for you.
-
-
 The `overall_benchmark_comparison` is a dictionary of `esgissue_slug:number`, numbers from 0-100 indicating the relationship between the portfolio's performance on this issue to the benchmark.
  
 A value of 50 represents this portfolio is *equal to the benchmark*.
@@ -206,9 +203,7 @@ The percentage better or worse than the benchmark is equal to *twice the differe
 
 Anything over 50% *is better* than benchmark or portfolio being compared.
 
-To calculate when the metrics are better use the formula `((metric - 50) * 2))`
-
-To calculate when the metrics are worse use the formula `((metric - 50) * -2))`
+To translate the overall_benchmark_comparison return value to the % difference between the portfolios displayed in the YourStake reports, use the formula `((metric - 50) * 2))`
 
 In the case of the data above, all of ESG metrics in the first portoflio are better than the second portfolio (the benchmark).
 
