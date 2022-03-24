@@ -1,0 +1,23 @@
+//
+// Important is a special container to make speicfic content stand out in the page.
+//
+// stylelint-disable selector-no-qualifying-type, declaration-block-semicolon-newline-after,declaration-block-single-line-max-declarations, selector-no-type, selector-max-type
+
+.important-info {
+    padding: 0.2em 0.15em;
+    background-color: #ffe08a;
+    border-color: transparent;
+    color: rgba(0,0,0,.7);
+    border-radius: $border-radius;
+}
+
+.important-info.is-light {
+    background-color: #fffaeb;
+    color: #946c00;
+    border-color: transparent;
+}
+
+.important-info.header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}

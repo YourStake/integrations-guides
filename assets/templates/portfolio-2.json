@@ -1,0 +1,35 @@
+{
+	"portfolio": {
+		"id": "modelportfolio_A3rNbYtpEw2H52eXBpAEeL",
+		"portfolio_type": "modelportfolio",
+		"status": "a",
+		"editable": true,
+		"sources": null,
+		"integrations": [
+		],
+		"has_holdings": true,
+		"name": "My first test portfolio",
+		"slug": "my-first-test-portfolio",
+		"holdings_as_of_date": "2022-03-22",
+		"screen_sets": [
+		],
+		"strategies": [
+		],
+		"default_benchmark": null,
+		"user": null,
+		"metadata": {
+		},
+		"created_date": "2022-03-22T22:29:00.780635Z",
+		"updated_at": "2022-03-22T22:29:07.007499Z",
+		"model_sets": [
+		],
+		"one_metric_coverage": 0.999949679239382,
+		"percent_corporate": 0.999949679239382,
+		"nonzero_metric_coverage": 0.999949679239382,
+		"has_questionnaire_response": false,
+		"accounts": [
+		],
+		"personas": [
+		]
+	}
+}

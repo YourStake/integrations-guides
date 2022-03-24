@@ -1,0 +1,76 @@
+{
+    "portfolio":{
+        "id":"modelportfolio_A3rNbYtpEw2H52eXBpAEeL",
+        "portfolio_type":"modelportfolio",
+        "status":"a",
+        "editable":true,
+        "sources":null,
+        "integrations":[],
+        "has_holdings":true,
+        "name":"My first test portfolio",
+        "slug":"my-first-test-portfolio",
+        "holdings_as_of_date":"2022-03-22",
+        "screen_sets":[],
+        "strategies":[],
+        "default_benchmark":null,
+        "user":null,
+        "metadata":{},
+        "created_date":"2022-03-22T22:29:00.780635Z",
+        "updated_at":"2022-03-22T22:29:07.007499Z",
+        "model_sets":[],
+        "one_metric_coverage":0.999949679239382,
+        "percent_corporate":0.999949679239382,
+        "nonzero_metric_coverage":0.999949679239382,
+        "has_questionnaire_response":false,
+        "holdings":[
+            {
+                "id":58094404,
+                "ticker":{
+                    "id":5886,
+                    "company":6212,
+                    "full_name":"Apple Inc.",
+                    "benchmark":36294,
+                    "benchmark_symbol":"SPY",
+                    "symbol":"AAPL",
+                    "isin":"US0378331005",
+                    "price":"160.55",
+                    "total_value":2517000000000.0,
+                    "exchange":"NASDAQ",
+                    "asset_type":"Stock",
+                    "company_name":"Apple Inc.",
+                    "company_sector":"Industrial and Commercial Machinery and Computer Equipment",
+                    "benchmark_description":null,
+                    "expense_ratio":null,
+                    "holdings_as_of_date":null,
+                    "filing_date":null
+                    },
+                "dollars":500000.0
+                },
+            {
+                "id":58094405,
+                "ticker":{
+                    "id":36294,
+                    "company":11405,
+                    "full_name":"SPDR S&P 500 ETF Trust",
+                    "benchmark":24260,
+                    "benchmark_symbol":"IWB",
+                    "symbol":"SPY",
+                    "isin":"US78462F1030",
+                    "price":"468.89",
+                    "total_value":345001228354.5,
+                    "exchange":"NYSEARCA",
+                    "asset_type":"ETF",
+                    "company_name":"State Street Corporation",
+                    "company_sector":"Depository Institutions",
+                    "benchmark_description":"Large Blend",
+                    "expense_ratio":0.0009,
+                    "holdings_as_of_date":"2021-03-31",
+                    "filing_date":"2021-05-28"
+                    },
+                "dollars":500000.0
+            }
+        ],
+        "accounts":[],
+        "personas":[]
+    }
+}
