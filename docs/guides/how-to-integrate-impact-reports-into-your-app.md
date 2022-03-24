@@ -193,6 +193,37 @@ The key fields are:
 
 The "Value" field is the main information displayed (difference between portfolio and benchmark). The mean_weighted_numbers and mean_weighted_benchmark_numbers show the raw values of the portfolio and benchmark on each metric.
 
+
+##### Understanding the overall comparison data
+
+The report field `overall_benchmark_comparison` contains the values you need to compare the portfolio vs. the blended benchmark on an aggregated basis. The values are the result of calculating the how the first portfolio compares against the benchmark. Each value relates to a specific ESG category, which are: health, environment, human rights, equal opportunity, and accountability.
+
+
+```
+"overall_benchmark_comparison": {
+    "health": 61.46127311866647,
+    "environment": 65.98189761266397,
+    "human-rights": 52.2522104200925,
+    "equal-opportunity": 66.47717613934829,
+    "accountability": 59.567195877071114
+}
+```
+
+The [API Docs](https://www.yourstake.org/api/docs/#operation/Generate%20a%20Report) explain how these values are explained.
+
+The `overall_benchmark_comparison` is a dictionary of `esgissue_slug:number`, numbers from 0-100 indicating the relationship between the portfolio's performance on this category to the benchmark.
+ 
+A value of 50 represents this portfolio is *equal to the benchmark*.
+
+The percentage better or worse than the benchmark is equal to *twice the difference between 50 and the value*. So 75 means 50% better, 100 means 100% better, 25 means 50% worse etc.
+
+Anything over 50% *is better* than benchmark or portfolio being compared.
+
+To translate the overall_benchmark_comparison return value to the % difference between the portfolio and the benchmark displayed in the YourStake reports, use the formula `((metric - 50) * 2))`
+
+In the case of the data above, all of ESG metrics in the first portoflio are better than the second portfolio (the benchmark).
+
+
 ##### Rendering an HTML  impact report
 
 [Download Sample Impact Report]({{ site.url }}/templates.zip)
