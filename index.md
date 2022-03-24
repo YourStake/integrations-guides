@@ -1,8 +1,8 @@
 ---
 layout: default
-title: YourStake Developer Documentation
+title: YourStake Integrations Guides
 nav_order: 1
-description: "YourStake Documentation Documentation includes everything you need to quickly incorporate portfolio analysis and data exploration tool into your application."
+description: "YourStake integrations guides includes everything you need to quickly incorporate portfolio analysis and data exploration tool into your application."
 permalink: /
 ---
 
@@ -22,7 +22,7 @@ Explore how to quickly incorporate portfolio analysis and data exploration tools
 
 ## API Docs
 
-- Find our API docs [here](https://www.yourstake.org/api/docs/)
+- Find the API docs [here](https://www.yourstake.org/api/docs/)
 - Download the API OpenAPI specification [here](https://www.yourstake.org/api/docs/api-schema)
 
 
