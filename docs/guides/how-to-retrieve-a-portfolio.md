@@ -2,6 +2,7 @@
 layout: default
 title: How to retrieve a portfolio
 parent: Guides
+nav_order: 3
 ---
 
 # How to retrieve a portfolio

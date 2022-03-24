@@ -2,6 +2,7 @@
 layout: default
 title: How to integrate questionnaires to define a client's ESG profile
 parent: Guides
+nav_order: 5
 ---
 
 # How to integrate questionnaires to define a client's ESG profile

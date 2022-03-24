@@ -2,6 +2,7 @@
 layout: default
 title: How to create a portfolio
 parent: Guides
+nav_order: 2
 ---
 
 # How to create a portfolio

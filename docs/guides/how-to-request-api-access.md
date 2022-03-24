@@ -2,6 +2,7 @@
 layout: default
 title: How to request API access
 parent: Guides
+nav_order: 1
 ---
 
 # How to request API access

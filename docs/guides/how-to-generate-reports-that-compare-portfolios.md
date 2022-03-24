@@ -2,6 +2,7 @@
 layout: default
 title: How to generate reports that compare portfolios
 parent: Guides
+nav_order: 6
 ---
 
 # How to generate reports that compare portfolios

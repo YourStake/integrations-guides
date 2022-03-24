@@ -2,6 +2,7 @@
 layout: default
 title: How to integrate impact reports to showcase a portfolio's values alignment
 parent: Guides
+nav_order: 7
 ---
 
 # How to integrate impact reports to showcase a portfolio's values alignment

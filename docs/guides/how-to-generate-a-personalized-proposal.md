@@ -2,6 +2,7 @@
 layout: default
 title: How to generate a personalized proposal
 parent: Guides
+nav_order: 8
 ---
 
 # How to generate a personalized proposal
