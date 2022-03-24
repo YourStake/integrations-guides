@@ -20,11 +20,11 @@ The general steps to create an impact report are:
 - Get or create a portfolio in YourStake through our dashboard or an [API call](https://www.yourstake.org/api/docs/#operation/Create%20a%20Portfolio).
     - **Note**: Write down the portfolio `id`. It looks like this `modelportfolio_xyz12345ab67890`.
 
-- Get or create the [Screen Sets](/docs/glossary/#screen-sets) for the user or portfolio through an [API call](https://www.yourstake.org/api/docs/#operation/List%20Screen%20Sets).
+- Get or create the [Screen Sets]({{site.baseurl}}{% link /docs/glossary/#screen-sets %}) for the user or portfolio through an [API call](https://www.yourstake.org/api/docs/#operation/List%20Screen%20Sets).
 
-- Make an API call to the [reports API endpoint](https://www.yourstake.org/api/docs/#tag/Reports). This requires that you also include the [Screen Sets](/docs/glossary/#screen-sets) as part of the request.
+- Make an API call to the [reports API endpoint](https://www.yourstake.org/api/docs/#tag/Reports). This requires that you also include the [Screen Sets]({{site.baseurl}}{% link docs/glossary %}#screen-sets) as part of the request.
     - Don't worry about details. We will cover those in depth next.
 
 - Use the JSON data from the reports API response to add to your UI.
-    - To see a simple demo template in action [click here](/)
+    - To see a simple demo template in action [click here]({{site.baseurl}}{% link docs/guides/how-to-integrate-impact-reports-to-showcase-a-portfolios-social-impact/ %}#rendering-an-html--impact-report)
 
