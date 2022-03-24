@@ -12,7 +12,7 @@ portfolio's contain a client's holding in our system. They are the building bloc
 
 Things you need:
 
-- [API Access Token]({% link docs/guides/how-to-request-api-access.md %}).
+- [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %}).
 - The portfolio `id`. Should be similar to `modelportfolio_A3rNbYtpEw2H52eXBpAEeL`.
 
 ### Let's retrieve a portfolio using curl.
@@ -20,7 +20,7 @@ Things you need:
 There's two options you may pass when retrieving portfolios.
 
 - **Holdings**: Whether or not to include the portfolio holdings in the response. `holdings=true` or `holdings=false`
-- **Values**: Comma separated list of [Screen Sets]({% link docs/glossary.md %}/#screen-sets) ids, to produce alignment numbers in response. `values=1,2,3,4`
+- **Values**: Comma separated list of [Screen Sets]({{ site.baseurl }}{% link docs/glossary.md %}/#screen-sets) ids, to produce alignment numbers in response. `values=1,2,3,4`
 
 {% include important.html title="These options are not required" body="You do not need to pass these values. However, it's very common to use them when benchmarking." %}
 
@@ -303,5 +303,5 @@ The JSON response from the API should be similar to:
 }
 ```
 
-These numbers might not make a lot of sense now. I suggest you learn how to generate reports from portfolios in order to understand what these numbers mean to your clients and you. You can find a guide on how to generate reports [here]({% link docs/guides/how-generate-reports-that-compare-portfolios.md %}).
+These numbers might not make a lot of sense now. I suggest you learn how to generate reports from portfolios in order to understand what these numbers mean to your clients and you. You can find a guide on how to generate reports [here]({{ site.baseurl }}{% link docs/guides/how-generate-reports-that-compare-portfolios.md %}).
 

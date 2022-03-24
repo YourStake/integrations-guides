@@ -20,7 +20,7 @@ Developer are then able take this guide and implement custom visual components w
 
 ##### Things you will need
 
-- [API Access Token]({%link docs/guides/how-to-request-api-access.md %})
+- [API Access Token]({{ site.baseurl }}{%link docs/guides/how-to-request-api-access.md %})
 - Two (2) portfolio `id`. Make sure the portfolios have different holdings.
     - The first portfolio `id` you pass will be for the portfolio being compared against the benchmark.
     - The second portfolio `id` you pass will be used as the benchmark the other portfolio will be compared against.

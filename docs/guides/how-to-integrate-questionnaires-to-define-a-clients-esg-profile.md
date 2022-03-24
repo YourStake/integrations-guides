@@ -25,7 +25,7 @@ Each answer is valued differently. Their answers are used to understand where th
 
 ##### Things you will need
 
-- [API Access Token]({% link docs/guides/how-to-request-api-access.md %})
+- [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 - A prospect's email address
 
 

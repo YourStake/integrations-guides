@@ -9,7 +9,7 @@ We have built these easy to follow guides to assist you with integrating with Yo
 
 ### First Steps
 
-- [How to request API access]({% link docs/guides/how-to-request-api-access.md %})
+- [How to request API access]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 
 
 ### Proposals

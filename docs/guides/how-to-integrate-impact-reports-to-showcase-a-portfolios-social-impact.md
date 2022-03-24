@@ -19,14 +19,14 @@ Developer are then able take this guide and implement custom visual components w
 
 ##### Things you will need
 
-- [API Access Token]({%link docs/guides/how-to-request-api-access.md %})
+- [API Access Token]({{ site.baseurl }}{%link docs/guides/how-to-request-api-access.md %})
 - A portfolio `id`
-    - [Learn how to create portfolios]({% link docs/guides/how-to-create-a-portfolio.md %})
-    - [Learn how to retrieve a portfolio]({% link docs/guides/how-to-retrieve-a-portfolio.md %})
+    - [Learn how to create portfolios]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
+    - [Learn how to retrieve a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-retrieve-a-portfolio.md %})
 
 ##### Optional things
 
-- A list of the Screen Sets. [Learn how to get them]({% link docs/guides/how-to-retrieve-a-portfolio.md %}#retrieve-a-portfolio-and-include-the-screen-sets).
+- A list of the Screen Sets. [Learn how to get them]({{ site.baseurl }}{% link docs/guides/how-to-retrieve-a-portfolio.md %}#retrieve-a-portfolio-and-include-the-screen-sets).
 
 
 ##### Get the report data

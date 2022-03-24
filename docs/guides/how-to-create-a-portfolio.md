@@ -13,7 +13,7 @@ portfolio's contain a client's holding in our system. They are the building bloc
 
 Things you need:
 
-- [API Access Token]({% link docs/guides/how-to-request-api-access.md %})
+- [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 - A list of the portfolio holdings with their respective `isin` identifiers
 
 ### Let's create a portfolio using curl.

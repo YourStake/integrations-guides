@@ -14,9 +14,9 @@ Explore how to quickly incorporate portfolio analysis and data exploration tools
 
 ## Frequently Used Guides
 
-- [How to request API access]({% link docs/guides/how-to-request-api-access.md %})
-- [How to generate a personalized client proposal]({% link docs/guides/how-to-generate-a-personalized-proposal.md %})
-- [How to create a portfolio]({% link docs/guides/how-to-create-a-portfolio.md %})
+- [How to request API access]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
+- [How to generate a personalized client proposal]({{ site.baseurl }}{% link docs/guides/how-to-generate-a-personalized-proposal.md %})
+- [How to create a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
 
 
 
