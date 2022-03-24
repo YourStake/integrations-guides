@@ -427,4 +427,4 @@ A higher value means the prospect is more or absolutely aligned with the ESG iss
 
 Show these values in your app to enable an investment conversation with your prospects.
 
-![Sample prospect ESG profile](/assets/images/sample-prospect-esg-profile.png)
+![Sample prospect ESG profile]({{ site.baseurl }}/assets/images/sample-prospect-esg-profile.png)
