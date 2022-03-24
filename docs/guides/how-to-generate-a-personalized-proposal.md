@@ -28,7 +28,7 @@ You create a portfolio for the client and post it to the API.
 
 Get the comparison report from the API and render it in your app.
 
-[Guide to generate reports that compare portfolios for the client through the API]({{ site.baseurl }}{% link docs/guides/how-generate-reports-that-compare-portfolios.md %}).
+[Guide to generate reports that compare portfolios for the client through the API]({{ site.baseurl }}{% link docs/guides/how-to-generate-reports-that-compare-portfolios.md %}).
 
 
 

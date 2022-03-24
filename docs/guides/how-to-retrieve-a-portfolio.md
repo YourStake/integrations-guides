@@ -303,5 +303,5 @@ The JSON response from the API should be similar to:
 }
 ```
 
-These numbers might not make a lot of sense now. I suggest you learn how to generate reports from portfolios in order to understand what these numbers mean to your clients and you. You can find a guide on how to generate reports [here]({{ site.baseurl }}{% link docs/guides/how-generate-reports-that-compare-portfolios.md %}).
+These numbers might not make a lot of sense now. I suggest you learn how to generate reports from portfolios in order to understand what these numbers mean to your clients and you. You can find a guide on how to generate reports [here]({{ site.baseurl }}{% link docs/guides/how-to-generate-reports-that-compare-portfolios.md %}).
 
