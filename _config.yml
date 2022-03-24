@@ -16,7 +16,7 @@
 title: YourStake
 logo: assets/images/stakelogo.png
 description: YourStake Integration Guides
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/integrations-guides" # the subpath of your site, e.g. /blog
 url: "https://yourstake.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
