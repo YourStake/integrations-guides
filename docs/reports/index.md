@@ -5,7 +5,7 @@ has_children: true
 has_toc: false
 ---
 
-All of our reports use what we call [Screen Sets]({{site.baseurl}}{% link /docs/glossary/#screen-sets %}).
+All of our reports use what we call [Screen Sets]({{site.baseurl}}{% link docs/glossary %}/#screen-sets).
 
 # Impact Reports
 
