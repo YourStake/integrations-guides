@@ -5,6 +5,8 @@ has_toc: false
 has_children: true
 ---
 
+# Guides
+
 We have built these easy to follow guides to assist you with integrating with YourStake.
 
 ### First Steps
