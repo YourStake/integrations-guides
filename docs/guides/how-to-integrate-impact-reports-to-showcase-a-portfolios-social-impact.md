@@ -203,7 +203,7 @@ We use the benchmark to let the client know how well their portfolio does agains
 
 ##### Rendering an HTML  impact report
 
-[Download Sample Impact Report]({{ site.url }}/templates.zip)
+[Download Sample Impact Report]({{ site.baseurl }}/templates.zip)
 
 We have created an HTML template using the report and portfolio data
 and generated a sample report for you.
@@ -212,4 +212,4 @@ This allows you to see a working example and get a hands on understanding of how
 
 The samples are built using the [Bootstrap framework](https://getbootstrap.com) for ease of use.
 
-![Sample impact report template screenshot](/assets/images/sample-impact-report.png)
+![Sample impact report template screenshot]({{ site.baseurl }}/assets/images/sample-impact-report.png)
