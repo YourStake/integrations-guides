@@ -146,3 +146,77 @@ The JSON response from the API should be similar to:
 	"updated_at": "2022-03-30T18:01:33.853021Z"
 }
 ```
+
+
+## How to check a model set alignment with a client's values
+
+[API Docs](https://www.yourstake.org/api/docs/#operation/Model%20Set%20Detail)
+
+Checking how a model set aligns with a client's values requires the following.
+
+- A model set `id`.
+- The client's Screen Sets values `id`s. These are passed as query parameters. Example: `values=1,2,3`.
+
+The curl command is straightforward.
+
+```
+curl  -H "Authorization: Token YourTokenGoesHere" "https://www.yourstake.org/api/v1/model_sets/modelset_N9xGLucMPcyHKHCbmPetHQ/?values=1,3,4"
+```
+
+To run the curl command open a terminal and paste the command above.
+The JSON response from the API should be similar to:
+
+```
+{
+	"id": "modelset_N9xGLucMPcyHKHCbmPetHQ",
+	"internal_identifier": null,
+	"firm": 1,
+	"name": "Model set for client ABC",
+	"model_portfolios": [
+		{
+			"id": "modelportfolio_CLWecXizzZJzC3KpzX7JX7",
+			"nickname": "My second test portfolio",
+			"status": "a",
+			"slug": "my-second-test-portfolio",
+			"created_date": "2022-03-23T21:44:43Z",
+			"updated_at": "2022-03-24T14:44:32.575879Z",
+			"alignments": {
+				"composite_values_1": 1.4,
+				"composite_values_3": 10.0,
+				"composite_values_4": 5.1,
+				"overall": 5.5
+			},
+			"fact_sheet_url": null,
+			"meta_external_id": null,
+			"external_id": "modelportfolio_CLWecXizzZJzC3KpzX7JX7",
+			"strategies": [
+			]
+		},
+		{
+			"id": "modelportfolio_A3rNbYtpEw2H52eXBpAEeL",
+			"nickname": "My first test portfolio",
+			"status": "a",
+			"slug": "my-first-test-portfolio",
+			"created_date": "2022-03-22T22:29:00Z",
+			"updated_at": "2022-03-24T14:44:23.653886Z",
+			"alignments": {
+				"composite_values_1": 7.0,
+				"composite_values_3": 6.4,
+				"composite_values_4": 5.9,
+				"overall": 6.433333333333334
+			},
+			"fact_sheet_url": null,
+			"meta_external_id": null,
+			"external_id": "modelportfolio_A3rNbYtpEw2H52eXBpAEeL",
+			"strategies": [
+			]
+		}
+	],
+	"created_at": "2022-03-30T17:57:48.331267Z",
+	"updated_at": "2022-03-30T18:01:33.853021Z"
+}
+```
+
+Each portfolio in the response `model_portfolios` field will contain alignment values for every screen set in the field `alignments`. [Learn more about working with these values]({{ site.baseurl }}{% link docs/guides/how-to-integrate-questionnaires-to-define-a-clients-esg-profile.md %}).
+
+You may use each individual alignment value to compare how different portfolios compare or use the overall alignment. Each value may represent a different perspective for your clients. We suggest making use of all values whenever possible.
