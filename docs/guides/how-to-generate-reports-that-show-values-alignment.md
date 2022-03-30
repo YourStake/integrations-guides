@@ -32,7 +32,7 @@ A client completes a values questionnaire.
 
 3 - Apply the client's values to the portfolio model set
 
-[Guide to work with model sets through the API](% link docs/guides/how-to-work-with-model-sets.md %)
+[Guide to work with model sets through the API]({{ site.baseurl }}{% link docs/guides/how-to-work-with-model-sets.md %})
 
 4 - Generate a report that compares the portfolios in the model set. This will allow you to build similar reports into your application and wow your clients.
 
