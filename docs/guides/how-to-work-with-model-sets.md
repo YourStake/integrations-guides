@@ -16,6 +16,7 @@ A Model Set is a collection of portfolios that can be screened by a set of Value
 
 To create a model set, you need the following.
 
+- [API Access Token]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 - A unique name to be used as the unique identifier
 - Your firm `id`
 - A name
