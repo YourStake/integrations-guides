@@ -112,7 +112,7 @@ The JSON response from the API should be similar to:
 	"id": "modelset_N9xGLucMPcyHKHCbmPetHQ",
 	"internal_identifier": null,
 	"firm": 1,
-	"name": "Model set for client DEF",
+	"name": "Model set for client ABC",
 	"model_portfolios": [
 		{
 			"id": "modelportfolio_CLWecXizzZJzC3KpzX7JX7",
