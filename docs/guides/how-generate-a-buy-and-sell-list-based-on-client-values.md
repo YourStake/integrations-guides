@@ -65,7 +65,7 @@ Here is a complete example:
 curl -H "Authorization: Token YourTokenHere1234567890" "https://www.yourstake.org/api/v1/screening/portfolio/modelportfolio_A3rNbYtpEw2H52eXBpAEeL/?screen_sets=1,3,4"
 ```
 
-Just replace the value of the token with yours.
+Just replace the value of the token with yours and replace the screen sets values with the results from the questionnaire.
 
 To run the curl command open a terminal and paste the command above.
 The JSON response from the API should be similar to:
