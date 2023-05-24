@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README)}i) }
   spec.executables   << 'just-the-docs'
 
-  spec.add_development_dependency "bundler", "~> 2.3.8"
+  spec.add_development_dependency "bundler", "> 2.4.0"
   spec.add_development_dependency "kramdown", "2.3.1"
   spec.add_runtime_dependency "jekyll", "<= 3.9.0"
   spec.add_runtime_dependency "github-pages", "~> 225"
