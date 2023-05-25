@@ -19,10 +19,10 @@ nav_order: 12
 - First YourStake must register your oauth application in our system. Once that is done you will receive the following: 
 `client_id`, `redirect_uri`, `code_challenge`, `code_challenge_method` and `user_email`.
 
-## Diagram
-...
+## Authentication Overview
+<img src="{{ site.baseurl }}/assets/images/embed-oauth-overview.png">
 
-## Server-Side Handshake
+## Getting an Authorization Code
 - In order to initialize the embed you will first need to perform a server-side request to retrieve an authorization code. 
 - NOTE: It is important that the request is made server-side to avoid exposing the value for the `HTTP_AUTHORIZATION` header on the frontend.
 - To get this authorization code make a server-side GET request to https://www.yourstake.org/api/v1/auth/embed/authorize/
