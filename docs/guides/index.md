@@ -35,3 +35,7 @@ We have built these easy to follow guides to assist you with integrating with Yo
 
 - [Learn how to integrate questionnaires to define a client's ESG profile]({{ site.baseurl }}{% link docs/guides/how-to-integrate-questionnaires-to-define-a-clients-esg-profile.md %})
 
+
+### Embed SDK
+
+- See [the embed sdk usage guide]({{ site.baseurl }}{% link docs/guides/how-to-integrate-with-embed-sdk.md %}) for information on integrating our embed sdk on your site.

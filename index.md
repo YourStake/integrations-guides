@@ -17,6 +17,7 @@ Explore how to quickly incorporate portfolio analysis and data exploration tools
 - [How to request API access]({{ site.baseurl }}{% link docs/guides/how-to-request-api-access.md %})
 - [How to generate a personalized client proposal]({{ site.baseurl }}{% link docs/guides/how-to-generate-a-personalized-proposal.md %})
 - [How to create a portfolio]({{ site.baseurl }}{% link docs/guides/how-to-create-a-portfolio.md %})
+- [Embed SDK Usage Guide]({{ site.baseurl }}{% link docs/guides/how-to-integrate-with-embed-sdk.md %})
 
 
 
