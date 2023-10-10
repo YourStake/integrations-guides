@@ -68,7 +68,8 @@ Sample response:
     - `pkceCodeVerifier`: this should be set to the `code_challenge` from initial registration
     - `oauthRedirectUri`: this should be set to the `redirect_uri` from initial registration
     - `targetElementIdentifier`: this should be set to the id of the html element that the embed's iframe should be rendered inside of
-    - `initialPage`: this should be set to the key of the page you want to load initially. If this is not provided it will default to `report-builder` as this is currently the only valid option.
+    - `initialPage`: this should be set to the key of the page you want to load initially. Currently supported values are `report-builder` (default) and `behavioral-questionnaire`.
+    - `slug`: A partial url that will be appended to the iframe url. When using `behavioral-questionnaire` this should be set to the custom questionnaire slug for your org. Not needed for `report-builder`.
     - `width`: this will specify the width of the iframe. It can be any valid css width value.
     - `height`: this will specify the height of the iframe. It can be any valid css height value.
 - Here is an example:
