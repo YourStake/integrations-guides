@@ -17,7 +17,7 @@ nav_order: 12
 
 ## Requirements
 - First YourStake must register your oauth application in our system. Once that is done you will receive the following: 
-`client_id`, `redirect_uri`, `code_challenge`, `code_challenge_method` and `user_email`.
+`client_id`, `redirect_uri`, `code_challenge`, `code_verifier` and `user_email`.
 
 ## Authentication Overview
 <img src="{{ site.baseurl }}/assets/images/embed-oauth-overview.png">
@@ -65,7 +65,7 @@ Sample response:
 - In order to initialize it you will need to provide the following:
     - `clientId`: this should be set to the `client_id` from initial registration
     - `authCode`: this should be set to the authorization code from the response of the server-side request to `api/v1/auth/embed/authorize/`
-    - `pkceCodeVerifier`: this should be set to the `code_challenge` from initial registration
+    - `pkceCodeVerifier`: this should be set to the `code_verifier` from initial registration
     - `oauthRedirectUri`: this should be set to the `redirect_uri` from initial registration
     - `targetElementIdentifier`: this should be set to the id of the html element that the embed's iframe should be rendered inside of
     - `initialPage`: this should be set to the key of the page you want to load initially. Currently supported values are `report-builder` (default) and `behavioral-questionnaire`.
