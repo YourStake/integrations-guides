@@ -17,7 +17,7 @@ nav_order: 12
 
 ## Requirements
 - First YourStake must register your oauth application in our system. Once that is done you will receive the following: 
-`client_id`, `redirect_uri`, `code_challenge`, `code_verifier` and `user_email`.
+`CLIENT_ID`, `CLIENT_SECRET`, `CODE_CHALLENGE`, `CODE_VERIFIER`, `USER_EMAIL`, and `REDIRECT_URI`.
 
 ## Authentication Overview
 <img src="{{ site.baseurl }}/assets/images/embed-oauth-overview.png">
@@ -26,7 +26,7 @@ nav_order: 12
 - In order to initialize the embed you will first need to perform a server-side request to retrieve an authorization code. 
 - NOTE: It is important that the request is made server-side to avoid exposing the value for the `HTTP_AUTHORIZATION` header on the frontend.
 - To get this authorization code make a server-side GET request to https://www.yourstake.org/api/v1/auth/embed/authorize/
-- The `HTTP_AUTHORIZATION` header must be the `Basic [insert encoded string]` where the encoded string is the base64 encoding of: "[client_id]:[client_secret]" (without the square brackets).
+- The `HTTP_AUTHORIZATION` header must be the `Basic [insert encoded string]` where the encoded string is the base64 encoding of: "[CLIENT_ID]:[CLIENT_SECRET]" (without the square brackets).
 
 **Query Parameters (* denotes that the parameter is required)**
 
@@ -34,12 +34,12 @@ nav_order: 12
 | Parameter     | Description                   |
 |:--------------|:------------------------------|
 |**response_type***|must be set to the word `code` |
-|**client_id***|must be set to the `client_id` that you were provided after initial registration in our system. |
+|**client_id***|must be set to the `CLIENT_ID` that you were provided after initial registration in our system. |
 |**scope***|must be set to `write` |
-|**redirect_uri***|must be set to the `redirect_uri` that you were provided after initial registration in our system |
-|**code_challenge***|must be set to the `code_challenge` that you were provided after initial registration in our system |
+|**redirect_uri***|must be set to the `REDIRECT_URI` that you were provided after initial registration in our system |
+|**code_challenge***|must be set to the `CODE_CHALLENGE` that you were provided after initial registration in our system |
 |**code_challenge_method***|must be set to `S256` |
-|**user_email***|must be set to the `user_email` that you were provided after initial registration in our system |
+|**user_email***|must be set to the `USER_EMAIL` that you were provided after initial registration in our system |
 
 Example request:
 ```http
@@ -63,10 +63,10 @@ Sample response:
 ## Initializing the Embed
 - After the YourStake embed script has been loaded on the page ([instructions here](#getting-the-embed-sdk-file)), the Yourstake embed constructor will be accessible at `window._YourStakeEmbed`.
 - In order to initialize it you will need to provide the following:
-    - `clientId`: this should be set to the `client_id` from initial registration
+    - `clientId`: this should be set to the `CLIENT_ID` from initial registration
     - `authCode`: this should be set to the authorization code from the response of the server-side request to `api/v1/auth/embed/authorize/`
-    - `pkceCodeVerifier`: this should be set to the `code_verifier` from initial registration
-    - `oauthRedirectUri`: this should be set to the `redirect_uri` from initial registration
+    - `pkceCodeVerifier`: this should be set to the `CODE_VERIFIER` from initial registration
+    - `oauthRedirectUri`: this should be set to the `REDIRECT_URI` from initial registration
     - `targetElementIdentifier`: this should be set to the id of the html element that the embed's iframe should be rendered inside of
     - `initialPage`: this should be set to the key of the page you want to load initially. Currently supported values are `report-builder` (default) and `behavioral-questionnaire`.
     - `slug`: A partial url that will be appended to the iframe url. When using `behavioral-questionnaire` this should be set to the custom questionnaire slug for your org. Not needed for `report-builder`.
